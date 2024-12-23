@@ -1,0 +1,221 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    color:  hsl(25, 97%, 53%);
+    color: hsl(217, 12%, 63%); 
+    font-family: "Overpass", serif;
+    font-weight: 700;
+}
+ 
+body
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(216, 12%, 8%);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+} 
+
+.card
+{
+    width: 25%;
+    height: 50%;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1% 2%;
+    display: none;
+}
+
+.image 
+{
+    width: 14%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: hsl(213, 18%, 24%);
+}
+
+.image img
+{
+    vertical-align: middle;
+}
+.para
+{
+    /* margin:3% 0%; */
+    margin-top: 2.5%;
+}
+.para h2
+{
+    color: white;
+}
+
+.para p
+{
+    line-height: 1.5em;
+    margin: 3% 0%;
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(217, 12%, 63%);
+}
+
+.rating
+{
+    width: 100%;
+    height: 14%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.span2
+{
+    width: 14%;
+    height: 95%; 
+    display: flex;
+    background-color: hsl(213, 18%, 24%);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button
+{
+    height: 10%;
+    border-radius: 2em;
+    border-style: none;
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+.span2:hover
+{
+    background-color: hsl(25, 97%, 53%);
+    color: black;
+}
+
+.active
+{
+    background-color: white;
+    color: black;
+}
+
+#rating span.active:hover {
+    background-color:white;   
+    /* it makes selected span white even after hover which will be brown */
+}
+button:hover
+{
+    background-color: white;
+}
+
+.card2
+{
+    width: 25%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 2%;
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: space-around;
+    border-radius: 1em;
+    background-color: hsl(213, 19%, 18%);
+    display: none;
+}
+
+.card.show
+{
+  display: flex;
+}
+
+.image2
+{
+    width: 65%;
+    height: 35%;
+    box-sizing: border-box;
+    object-fit: fill; 
+}
+
+.rate
+{
+    background-color:hsl(213, 18%, 24%);
+    width: 65%;
+    height:10%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+    
+}
+
+.rate span
+{
+    color: hsl(25, 97%, 53%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.para2 h2
+{
+    color: white;
+}
+.para2 p
+{
+    line-height: 1.5em;
+    margin-top: 4%;
+    font-size: 14px;
+    font-weight: 400;
+} 
+
+@media (max-width: 700px) {
+    .card, .card2 {
+        width: 90%; /* Full width for smaller screens */
+        height: auto; /* Adjust height automatically */
+        padding: 5%;
+    }
+
+    .image {
+        width: 20%; /* Larger image for visibility */
+        height: 20%;
+    }
+
+    .para p {
+        font-size: 12px; /* Smaller font for smaller screens */
+    }
+
+    .rating {
+        flex-direction: column; /* Stack ratings vertically */
+        height: auto;
+        gap: 10px; /* Add spacing between elements */
+    }
+
+    .span2 {
+        width: 20%;
+        height: auto;
+    }
+
+    button {
+        width: 100%; /* Full width buttons */
+        height: auto;
+        padding: 10px;
+    }
+
+    .image2 {
+        width: 90%; /* Larger image for better visibility */
+        height: auto;
+    }
+}

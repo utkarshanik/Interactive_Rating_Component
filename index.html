@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="Style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+<div class="card show" id="firstCard">
+  <div class="image">
+    <img src="images/icon-star.svg" alt="">
+  </div>
+  <div class="para">
+     <h2>How did we do? </h2>
+      <p> Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering! </p>
+    </div>
+  <div class="rating" id="rating">
+    <span data-value="1" class="span2">1</span>
+    <span data-value="2" class="span2">2</span>
+    <span data-value="3" class="span2">3</span>
+    <span data-value="4" class="span2">4</span>
+    <span data-value="5" class="span2">5</span>
+  </div>
+  <button type="submit" onclick="showSecondCard()">SUBMIT</button>
+</div>
+
+
+<div class="card card2" id="secondCard">
+  <div class="image2">
+    <img src="images/illustration-thank-you.svg" alt="">
+  </div>
+
+  <div class="rate">
+    <span> You selected <span id="Your_Id">.......</span> out of 5 </span>
+  </div>
+
+  <div class="para2">
+    <h2>Thank you!</h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch! </p>
+  </div>
+
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 
+    Coded by <a href="#">Your Name Here</a>
+  </div>
+</body>
+</html>
+<script src="temp.js"></script>
