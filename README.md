@@ -30,9 +30,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](design/Screenshot (16).png)
-![](design/Screenshot (17).png)
-![](design/Screenshot (19).png)
+design/Screenshot (16).png
+design/Screenshot (17).png
+design/Screenshot (19).png
 
 ### Links
 
