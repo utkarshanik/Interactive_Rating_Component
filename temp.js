@@ -12,11 +12,19 @@ selc_id.forEach(selc => {
       if (selc.classList.contains('active')) {
         // If the clicked span is already active, unselect it
         selc.classList.remove('active');
+        val=0;
       } else {
         // Otherwise, remove 'active' from all and set it on the clicked span
         selc_id.forEach(s => s.classList.remove('active'));
         selc.classList.add('active');
         val = selc.dataset.value;
+      }
+
+      console.log(val);
+      show_id.textContent = val; // Display the value
+      if(val<1)
+      {
+        show_id.textContent = '0'; // Clear the displayed value
       }
     });
   });
@@ -29,10 +37,5 @@ selc_id.forEach(selc => {
     // Show the second card
     document.getElementById('secondCard').classList.add('show');
     
-    console.log(val);
-    show_id.textContent = val; // Display the value
-    if(val<1)
-    {
-      show_id.textContent = '0'; // Clear the displayed value
-    }
+
   }
